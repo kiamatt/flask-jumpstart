@@ -8,7 +8,7 @@ from flask_debugtoolbar import DebugToolbarExtension
 app = Flask(__name__)
 basedir = os.path.abspath(os.path.dirname(__file__))
 app.config['SECRET_KEY'] = '\x13\x15\xf3]\xc7\x96e4&\xc8\x89\xe7\xc4\xc7\xbd\x8dwmv0\xa6'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'thermos.db')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'app.db')
 app.config['DEBUG'] = True
 db = SQLAlchemy(app)
 import models
