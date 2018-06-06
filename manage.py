@@ -1,4 +1,4 @@
-from app import app, db
+from __init__ import app, db
 from flask_script import Manager, prompt_bool
 from models import User, Book
 
